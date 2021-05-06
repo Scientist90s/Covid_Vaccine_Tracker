@@ -1,3 +1,5 @@
+# This program will tell you if the slot is available or not in the specified pincodes
+
 import requests
 import json
 from datetime import date

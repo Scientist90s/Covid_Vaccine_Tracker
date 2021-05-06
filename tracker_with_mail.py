@@ -1,23 +1,26 @@
+# This program basically sends an email whenever vaccine slot is available in the specified pincodes
+
 import requests
 import json
 from datetime import date
 import smtplib, ssl
 import time
 
+# you can specify all the pincodes here
 pin = ["380008", "382443", "380050", "380015"]
 cur_date = date.today()
 
-smtp_server = "smtp.gmail.com"
-port = 587  # For starttls
-sender_email = "gcet.mechatronics@gmail.com"
-receiver_email = "yshethwala@gmail.com"
-# password = input("Type your password and press enter: ")
-password = "mechatronics"
+smtp_server = "smtp.gmail.com"  # smtp server
+port = 587
+sender_email = "gcet.mechatronics@gmail.com"    # sender's email address
+receiver_email = "yshethwala@gmail.com"   #  receiver's email address
+password = input("Type your password and press enter: ")
 context = ssl.create_default_context()
 message = ""
 
 mail_flag = True
 
+# this function uses COWIN API to get data of available slots of vaccine
 def calendarbyPIN(pincode, date):
     global mail_flag
     global message
@@ -57,6 +60,7 @@ def calendarbyPIN(pincode, date):
         if mail_flag == False:
             mail_flag = True
 
+# This fucntion sends email
 def send_email(msg):
     try:
         server = smtplib.SMTP(smtp_server,port)
