@@ -21,3 +21,6 @@ one needs to configure following paarameters for mail:
 * Receiver's mail ID
 
 After configuring all the parameters one can set to run this program in the background in their machine (PC or Laptop) and whenever some slots are available they will get notified through mail.
+
+
+Please share as much as possible so that it can help many people.
