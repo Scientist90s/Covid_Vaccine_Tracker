@@ -5,14 +5,12 @@ This repository will help people to findout the available slots for vaccination 
 Here, one can find 2 file `tracker.py` and `tracker_with_mail.py`
 
 ## tracker.py
----
 
 This file will provide you with the information on available vaccine slot in the specified pincodes.
 
 One just need to add pincodes in the `pincodes` list and run the program. If the slots are available it will be shown with details like center name, pincode, date and available slots in terminal.
 
 ## tracker_with_mail.py
----
 
 This will send an email with details when any of the slots are available in the specifies pincodes.
 
