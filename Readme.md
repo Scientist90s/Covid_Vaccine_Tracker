@@ -8,7 +8,7 @@ Here, one can find 2 file `tracker.py` and `tracker_with_mail.py`
 
 This file will provide you with the information on available vaccine slot in the specified pincodes.
 
-One just need to add pincodes in the `pincodes` list and run the program. If the slots are available it will be shown with details like center name, pincode, date and available slots in terminal.
+One just need to add pincodes in the `pin` list and run the program. If the slots are available it will be shown with details like center name, pincode, date and available slots in terminal.
 
 ## tracker_with_mail.py
 
